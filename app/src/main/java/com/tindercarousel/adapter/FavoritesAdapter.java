@@ -49,7 +49,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.MyVi
 
         holder.textViewLabel.setText("My name is");
         holder.textViewData.setText(currentData.getName());
-        holder.imgButton_profile.setElevation(20);
+        holder.imgButton_profile.setElevation(10);
 
         holder.imgButton_profile.setOnClickListener(new View.OnClickListener() {
 
@@ -57,8 +57,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.MyVi
             public void onClick(View v) {
                 holder.textViewLabel.setText("My name is");
                 holder.textViewData.setText(currentData.getName());
-                holder.imgButton_profile.setElevation(20);
-                holder.imgButton_profile.setOutlineSpotShadowColor(Color.parseColor("#76FF03"));
+                holder.imgButton_profile.setElevation(10);
             }
         });
         holder.imgButton_address.setOnClickListener(new View.OnClickListener() {
@@ -66,8 +65,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.MyVi
             public void onClick(View v) {
                 holder.textViewLabel.setText("My address is");
                 holder.textViewData.setText(currentData.getAddress());
-                holder.imgButton_address.setElevation(20);
-                holder.imgButton_address.setOutlineSpotShadowColor(Color.parseColor("#76FF03"));
+                holder.imgButton_address.setElevation(10);
             }
         });
 
@@ -76,8 +74,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.MyVi
             public void onClick(View v) {
                 holder.textViewLabel.setText("Birthday");
                 holder.textViewData.setText(millsToDate(Long.parseLong(currentData.getDob())));
-                holder.imgButton_info.setElevation(20);
-                holder.imgButton_info.setOutlineSpotShadowColor(Color.parseColor("#76FF03"));
+                holder.imgButton_info.setElevation(10);
             }
         });
 
@@ -86,8 +83,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.MyVi
             public void onClick(View v) {
                 holder.textViewLabel.setText("My contact is");
                 holder.textViewData.setText(currentData.getPhone());
-                holder.imgButton_contact.setElevation(20);
-                holder.imgButton_contact.setOutlineSpotShadowColor(Color.parseColor("#76FF03"));
+                holder.imgButton_contact.setElevation(10);
             }
         });
 
@@ -96,8 +92,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.MyVi
             public void onClick(View v) {
                 holder.textViewLabel.setText("My username is");
                 holder.textViewData.setText(currentData.getUsername());
-                holder.imgButton_lock.setElevation(20);
-                holder.imgButton_lock.setOutlineSpotShadowColor(Color.parseColor("#76FF03"));
+                holder.imgButton_lock.setElevation(10);
             }
         });
     }
