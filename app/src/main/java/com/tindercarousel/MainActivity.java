@@ -170,7 +170,6 @@ public class MainActivity extends AppCompatActivity implements CardStackListener
             @Override
             public void onResponse(@NotNull Call<JsonObject> call, @NotNull Response<JsonObject> response) {
                 try {
-                    Log.d("Response Disappeared", response.body().toString());
                     UserData data = new Gson().fromJson(response.body().toString(), UserData.class);
                     users.add(data.getResults().get(0));
                     // notifyDatasetChanged will not work here as it will set the adapter again
